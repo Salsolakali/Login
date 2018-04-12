@@ -5,48 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="top|center"
     android:padding="20dp"
-    tools:context="com.example.fernana6.login.MainActivity"
-    >
+    tools:context="com.example.fernana6.login.RegisterActivity">
+
 
     <EditText
-        android:id="@+id/inputName"
+    android:id="@+id/inputName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Name"/>
+    <EditText
+        android:id="@+id/inputSurname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"/>
+        android:hint="Surname"/>
 
     <EditText
-
-        android:id="@+id/inputPassword"
+        android:id="@+id/inputRegisterPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:inputType="textPassword"
-        />
-    <LinearLayout
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/inputRegisterRepeatPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        >
+        android:hint="Repeat password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
     <Button
-        android:id="@+id/btnSignIn"
+        android:id="@+id/btnSaveIntoSharedPreferences"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-    />
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Save"
         android:layout_margin="30dp"
         />
-    <Button
-        android:id="@+id/btnRecicleView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recicle View"/>
-    </LinearLayout>
+
 
 </LinearLayout>
